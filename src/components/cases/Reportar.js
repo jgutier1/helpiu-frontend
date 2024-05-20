@@ -152,7 +152,7 @@ export default function Reportar() {
         </div>
         <div className="row my-4">
             <div className="col-sm-6 col-lg-6">
-                <label htmlFor="delito" className="form-label">Delito<span className="text-muted">*</span></label>
+                <label htmlFor="delito" className="form-label">Caso<span className="text-muted">*</span></label>
                 <select 
                     className="form-control" 
                     id="delito_id" 
@@ -160,7 +160,7 @@ export default function Reportar() {
                     name="delito_id"
                     onChange={handleChangeDelito}
                 >
-                    <option value=""> -- Selecciona delito -- </option>
+                    <option value=""> -- Selecciona caso -- </option>
                     {delitos.map((d) => <option key={d.id+1} value={d.id}>{d.nombre}</option>)}
                 </select>
                 <div className="invalid-feedback d-block">

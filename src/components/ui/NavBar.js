@@ -29,10 +29,10 @@ export default function NavBar() {
         className="navbar navbar-expand-lg navbar-light bg-light px-3"
     >
             {user && (
-        <Link to="/private/profile" className="navbar-brand" tabIndex={0} aria-label="Ir al Inicio">HelpMeIUD</Link>
+        <Link to="/private/profile" className="navbar-brand" tabIndex={0} aria-label="Ir al Inicio">HelpMePet</Link>
     )}
     {!user && (
-        <Link to="/login" className="navbar-brand" tabIndex={0} aria-label="Ir al Inicio">HelpMeIUD</Link>
+        <Link to="/login" className="navbar-brand" tabIndex={0} aria-label="Ir al Inicio">HelpMePet</Link>
     )}
     
      <button className="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" 
@@ -86,7 +86,7 @@ export default function NavBar() {
             className="nav-item nav-link" 
             to="/private/delitos"
         >
-            Delitos
+            Casos
         </NavLink>
         )}
         <NavLink
